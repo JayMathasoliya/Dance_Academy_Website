@@ -1,0 +1,23 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/script.js')
+    
+block style
+    style
+      include ../static/style.css
+      include ../static/servicesStyle.css
+
+block content 
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/services") Services]
+            li #[a(href="/classInfo") Class Info]
+            li #[a(href="/contactUs") Contact Us]
+
+    div.container
+      h1 Services
